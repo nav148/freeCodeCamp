@@ -1,0 +1,1 @@
+{"index.js":"function spinalCase(str) {\n  let strSplit = str.split(/(?=[A-Z])|[^a-zA-Z\\-]/)\n  for (let i = 0; i < strSplit.length; i++){\n    strSplit[i] = strSplit[i].toLowerCase();\n  }\n  return strSplit.join(\"-\");\n}\n\nspinalCase('This Is Spinal Tap');"}

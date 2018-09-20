@@ -1,0 +1,1 @@
+{"index.js":"function sumFibs(num) {\n  let fibSeq = [1, 1];\n  let sum = 2;\n\n  while (fibSeq[fibSeq.length - 1] < num) {\n    fibSeq.push(fibSeq[fibSeq.length - 1] + fibSeq[fibSeq.length - 2]);\n    if ( ((fibSeq[fibSeq.length - 1] % 2) == 1) && (fibSeq[fibSeq.length - 1] <= num) ){\n      sum += fibSeq[fibSeq.length - 1];\n    }\n  }\n  return sum;\n}\n\nsumFibs(4);"}
